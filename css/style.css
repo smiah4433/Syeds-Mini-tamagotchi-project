@@ -1,0 +1,33 @@
+body {
+  background-color: #52b8f7;
+  /* background-size: cover; */
+}
+h1 {
+  text-align: center;
+}
+
+.shell
+  {
+    position: relative;
+    top: -50px;
+    left: 470px;
+    z-index: 0;
+    height: 500px;
+
+  }
+  .character
+  {
+    position: absolute;
+    top: 310px;
+    left: 570px;
+    z-index: 1;
+    height: 300px;
+
+  }
+
+  .button{
+    margin-left: 10px;
+    position: relative;
+    top: 10px;
+    left: 610px;
+  }
