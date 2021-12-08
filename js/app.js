@@ -4,6 +4,10 @@ class Tamagotchi {
     this.ageText = document.getElementById('age')
     this.hunger = 0
     this.hungerText = document.getElementById('hunger')
+    this.bordness = 0
+    this.bordnessText = document.getElementById('bordness')
+    this.sleepiness = 0
+    this.sleepinessText = document.getElementById('sleepiness')
   }
 
   ageUp() {
@@ -14,9 +18,16 @@ class Tamagotchi {
       setTimeout(() => this.ageUp(), 3000)
     }
   }
+  bordnessUp() {
+    if (this.bordness <= 10){
+      this.bordness +=2
+      this.bordnessText.innerText = this.bordness
+      setTimeout(() => this.bordnessUp(), 2000)
+    }
+  }
 
   hungerUp() {
-    if (this.hunger <= 10) {
+    if (this.hunger <= 9) {
       this.hunger++
       this.hungerText.innerText = this.hunger
       // console.log(age);
@@ -27,6 +38,10 @@ class Tamagotchi {
   feed() {
     this.hunger--
     this.hungerText.innerText = this.hunger
+    this.bordness-=2
+    this.bordnessText.innerText = this.bordness
+    this.sleepiness+=2
+    this.sleepinessText.innerText = this.sleepiness
   }
 }
 
@@ -35,4 +50,6 @@ let tamagotchi = new Tamagotchi()
 function play() {
   tamagotchi.ageUp()
   tamagotchi.hungerUp()
+  tamagotchi.bordnessUp()
+  tamagotchi.sleep()
 }
