@@ -1,5 +1,7 @@
 body {
-  background-color: #52b8f7;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/911/849/171/gta-grand-theft-auto-rockstar-games-san-andreas-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   /* background-size: cover; */
 }
 h1 {

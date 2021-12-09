@@ -104,7 +104,9 @@ class Tamagotchi {
     this.sleepiness = 0
     this.sleepinessText.innerText = this.sleepiness
     const body = document.getElementsByTagName("body")[0];
-    body.style.background = "#0d3837"
+    body.style.backgroundImage = "url('https://c4.wallpaperflare.com/wallpaper/790/309/70/street-home-art-los-angeles-gta-hd-wallpaper-preview.jpg')"
+    document.body.style.backgroundSize = "120%"
+
   }
 
 }
