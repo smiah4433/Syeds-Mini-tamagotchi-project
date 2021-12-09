@@ -70,11 +70,16 @@ class Tamagotchi {
 
   }
   sleepUp() {
-    if (this.sleepiness <=10) {
+    if (this.sleepiness <= 10) {
       this.bordness-1
       this.bordnessText.innerText = this.bordness
       // setTimeout(() => this.hungerUp(), 1000)
     }
+    // else {
+    //   if (this.sleepiness >= 10) {
+    //     alert('Mr G has died because you did not let him rest from hustling and was caught lacking!');
+    //   }
+    // }
   }
 
   feed() {
